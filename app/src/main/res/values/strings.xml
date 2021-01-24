@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Organize</string>
+    <string name="txtOrganize50">Organize 50</string>
+    <string name="txtLim">Limite</string>
+    <string name="txtGas">Gastos</string>
+    <string name="txtDis">Disponível</string>
+    <string name="txtOrganize35">Organize 35</string>
+    <string name="txtOrganize15">Organize 15</string>
+    <string name="txtSaldo">Saldo</string>
+    <string name="txtEntrada">Entrada</string>
+    <string name="txtSaida">Saida</string>
+    <string name="login">Login:</string>
+    <string name="hint_login">Nome ou Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+</resources>
