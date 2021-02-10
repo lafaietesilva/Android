@@ -4,17 +4,20 @@ import java.util.Date;
 
 public class Entrada {
 
-    private String nome;
-    private String categoria;
-    private String tipo;
-    private Date data;
-    private int valor;
+    private String nome;//Nome da entrada a ser efeutada
+    private String categoria;//Categoria da entrada a ser efetuada
+    private String subCategoria;//SubCategoria da entrada a ser efetuada
+    private int valor;//Valor da entrada
+    private Date dataReal;//Data da efetivação da entrada
+    private Date dataPrev;//Data preveista da efetição da entrada
 
-    public Entrada(String categoria, String tipo, Date data, int valor) {
+    public Entrada(String nome, String categoria, String subCategoria, int valor, Date dataReal, Date dataPrev) {
+        this.nome = nome;
         this.categoria = categoria;
-        this.tipo = tipo;
-        this.data = data;
+        this.subCategoria = subCategoria;
         this.valor = valor;
+        this.dataReal = dataReal;
+        this.dataPrev = dataPrev;
     }
 
     public String getNome() {
@@ -33,20 +36,12 @@ public class Entrada {
         this.categoria = categoria;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getSubCategoria() {
+        return subCategoria;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public Date getData() {
-        return data;
-    }
-
-    public void setData(Date data) {
-        this.data = data;
+    public void setSubCategoria(String subCategoria) {
+        this.subCategoria = subCategoria;
     }
 
     public int getValor() {
@@ -55,5 +50,21 @@ public class Entrada {
 
     public void setValor(int valor) {
         this.valor = valor;
+    }
+
+    public Date getDataReal() {
+        return dataReal;
+    }
+
+    public void setDataReal(Date dataReal) {
+        this.dataReal = dataReal;
+    }
+
+    public Date getDataPrev() {
+        return dataPrev;
+    }
+
+    public void setDataPrev(Date dataPrev) {
+        this.dataPrev = dataPrev;
     }
 }

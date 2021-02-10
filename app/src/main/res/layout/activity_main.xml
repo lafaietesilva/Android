@@ -5,7 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
+    tools:context=".View.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="40dp"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -28,6 +34,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
 
             <TextView
+                android:id="@+id/txtSaldo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -58,6 +65,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
 
             <TextView
+                android:id="@+id/txtCustos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
