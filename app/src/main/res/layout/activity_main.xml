@@ -9,9 +9,9 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:layout_marginTop="40dp"/>
+        android:layout_height="319dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/ic_launcher_foreground" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -74,5 +74,20 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            android:src="@drawable/ic_action_name"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
 
 </LinearLayout>
