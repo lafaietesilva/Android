@@ -1,4 +1,4 @@
-package br.com.lafaietesilva.organize.View;
+package br.com.lafaietesilva.organize.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +18,8 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputLayout txtInLoutSenha;
     private TextInputEditText edtTxtEmail;
     private TextInputEditText edtTxtSenha;
-    private Button button;
+    private Button buttonLogin;
+    private Button buttonCad;
 
 
     @Override
@@ -26,32 +27,44 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        button = findViewById(R.id.btnLogConfirma);
+        buttonLogin = findViewById(R.id.btnLogConfirma);
+        buttonCad = findViewById(R.id.btnCadUsu);
 
         txtInLoutEmail = findViewById(R.id.txtlay_email);
         txtInLoutSenha = findViewById(R.id.txtlay_senha);
         edtTxtEmail = findViewById(R.id.edtLogEmail);
         edtTxtSenha = findViewById(R.id.edtLogSenha);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 validForm();
                 if(!txtInLoutEmail.isErrorEnabled() && !txtInLoutSenha.isErrorEnabled() ){
-                    trocatela();
+                    trocatelaMain();
                 }
 
             }
         });
 
+        buttonCad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                trocatelaCadUsu();
+            }
+        });
+
     }
 
-    private void trocatela() {
+    private void trocatelaMain() {
         Intent intent = new Intent(LoginActivity.this,MainActivity.class);
         startActivity(intent);
         finish();
     }
 
+    private void trocatelaCadUsu(){
+        Intent intent = new Intent(LoginActivity.this,UsuarioActivity.class);
+        startActivity(intent);
+    }
     private void validForm(){
         if(edtTxtEmail.getText().toString().isEmpty()){
             txtInLoutEmail.setErrorEnabled(true);

@@ -13,4 +13,6 @@
     <string name="hint_login">Nome ou Email</string>
     <string name="senha">Senha</string>
     <string name="entrar">Entrar</string>
+    <string name="cadUsu">Deseja criar uma conta?</string>
+    <string name="garvaUsu">Registrar</string>
 </resources>

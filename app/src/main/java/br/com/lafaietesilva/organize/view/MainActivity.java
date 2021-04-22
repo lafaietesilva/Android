@@ -1,4 +1,4 @@
-package br.com.lafaietesilva.organize.View;
+package br.com.lafaietesilva.organize.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
