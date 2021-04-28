@@ -1,9 +1,11 @@
 package br.com.lafaietesilva.organize.control;
 
-public interface ICrud {
+import java.util.List;
 
-    public  void  incluir();
-    public  void  alterar();
-    public  void  deletar();
-    public  void  listar();
+public interface ICrud <T> {
+
+    public  boolean  incluir(T obj);
+    public  boolean  alterar(T obj);
+    public  boolean  deletar(T obj);
+    public List<T> listar();
 }

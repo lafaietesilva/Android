@@ -2,6 +2,8 @@ package br.com.lafaietesilva.organize.model;
 
 import java.util.Date;
 
+import br.com.lafaietesilva.organize.control.ICrud;
+
 public class Entrada {
 
     private int id;
@@ -22,6 +24,10 @@ public class Entrada {
         this.valor = valor;
         this.dataPrev = dataPrev;
         this.dataReal = dataReal;
+    }
+
+    public Entrada(){
+
     }
 
     public int getId() {
@@ -87,4 +93,6 @@ public class Entrada {
     public void setDataReal(Date dataReal) {
         this.dataReal = dataReal;
     }
+
+
 }

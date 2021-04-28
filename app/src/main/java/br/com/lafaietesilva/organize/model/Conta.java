@@ -1,6 +1,8 @@
 package br.com.lafaietesilva.organize.model;
 
-public class Conta {
+import br.com.lafaietesilva.organize.control.ICrud;
+
+public class Conta  {
 
     private int id;
     private int idUsuario;
@@ -8,6 +10,9 @@ public class Conta {
     private String tipo;
     private int saldo;
 
+    public Conta() {
+
+    }
     public int getId() {
         return id;
     }
@@ -55,4 +60,5 @@ public class Conta {
         this.tipo = tipo;
         this.saldo = saldo;
     }
+
 }

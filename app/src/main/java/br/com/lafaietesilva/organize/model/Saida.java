@@ -2,7 +2,9 @@ package br.com.lafaietesilva.organize.model;
 
 import java.util.Date;
 
-public class Saida {
+import br.com.lafaietesilva.organize.control.ICrud;
+
+public class Saida{
 
     private int id;
     private int idCart;
@@ -22,6 +24,10 @@ public class Saida {
         this.valor = valor;
         this.dataPrev = dataPrev;
         this.dataReal = dataReal;
+    }
+
+    public Saida(){
+
     }
 
     public int getId() {
@@ -87,4 +93,5 @@ public class Saida {
     public void setDataReal(Date dataReal) {
         this.dataReal = dataReal;
     }
+
 }

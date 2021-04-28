@@ -1,5 +1,7 @@
 package br.com.lafaietesilva.organize.model;
 
+import br.com.lafaietesilva.organize.control.ICrud;
+
 public class Cartao {
 
     private int id;
@@ -16,6 +18,10 @@ public class Cartao {
         this.limite = limite;
         this.custo = custo;
         this.saldo = saldo;
+    }
+
+    public Cartao(){
+
     }
 
     public int getId() {
@@ -65,4 +71,5 @@ public class Cartao {
     public void setSaldo(int saldo) {
         this.saldo = saldo;
     }
+
 }

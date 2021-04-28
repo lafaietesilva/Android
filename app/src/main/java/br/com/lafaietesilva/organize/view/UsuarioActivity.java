@@ -60,7 +60,7 @@ public class UsuarioActivity extends AppCompatActivity {
                 validform();
 
                 if(!txtlayCadNome.isErrorEnabled() && !txtlayCadEmail.isErrorEnabled() && !txtlayCadSenha.isErrorEnabled() && !txtlayCadCSenha.isErrorEnabled()){
-                    if (gravausuario());{
+                    if (gravausuario(usuario));{
                         trocatela();
                     }
                 }
@@ -106,7 +106,7 @@ public class UsuarioActivity extends AppCompatActivity {
             txtlayCadCSenha.setErrorEnabled(false);
         }
 
-        if(edtCadUsuSenha.getText().equals(edtCadUsuCSenha.getText())){
+        if(edtCadUsuSenha.getText().toString().equals(edtCadUsuCSenha.getText().toString())){
             txtlayCadSenha.setErrorEnabled(false);
             txtlayCadCSenha.setErrorEnabled(false);
             usuario.setSenha(edtCadUsuSenha.getText().toString());
@@ -125,8 +125,9 @@ public class UsuarioActivity extends AppCompatActivity {
         finish();
     }
 
-    private boolean gravausuario(){
-        usuario.incluir();
-        return true;
+    private boolean gravausuario(Usuario usuario){
+        boolean ret;
+        ret = usuarioControl.incluir(usuario);
+        return ret;
     }
 }

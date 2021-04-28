@@ -1,6 +1,8 @@
 package br.com.lafaietesilva.organize.model;
 
-public class Carteira {
+import br.com.lafaietesilva.organize.control.ICrud;
+
+public class Carteira{
 
     private int id;
     private int idConta;
@@ -14,6 +16,10 @@ public class Carteira {
         this.descricao = descricao;
         this.entrada = entrada;
         this.saida = saida;
+    }
+
+    public Carteira(){
+
     }
 
     public int getId() {
@@ -55,4 +61,5 @@ public class Carteira {
     public void setSaida(int saida) {
         this.saida = saida;
     }
+
 }

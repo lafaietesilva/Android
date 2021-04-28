@@ -2,7 +2,7 @@ package br.com.lafaietesilva.organize.model;
 
 import br.com.lafaietesilva.organize.control.ICrud;
 
-public class Usuario implements ICrud {
+public class Usuario  {
 
     private int id;
     private String nome;
@@ -52,23 +52,4 @@ public class Usuario implements ICrud {
         this.senha = senha;
     }
 
-    @Override
-    public void incluir() {
-
-    }
-
-    @Override
-    public void alterar() {
-
-    }
-
-    @Override
-    public void deletar() {
-
-    }
-
-    @Override
-    public void listar() {
-
-    }
 }
